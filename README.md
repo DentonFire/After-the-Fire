@@ -1,4 +1,4 @@
-# afterthefire
+# After the Fire
 After the Fire: Recovery Guide
 
 An interactive, mobile-friendly recovery guide for residents of Denton, Texas, affected by a fire.
