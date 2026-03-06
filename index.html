@@ -13,22 +13,21 @@
 
     <!-- Social Sharing (Open Graph) -->
     <meta property="og:title" content="After the Fire: Recovery Guide">
-    <meta property="og:description" content="A comprehensive recovery guide for Denton residents. Immediate steps, important contacts, and document replacement.">
+    <meta property="og:description" content="Official recovery resources for Denton residents. Immediate steps, rebuilding permits, and document replacement.">
     <meta property="og:image" content="https://files.constantcontact.com/3720c3fd901/10017eb4-f7d2-424d-92ed-c1b5424b9869.png">
     <meta property="og:url" content="https://dentonfiredept.github.io/after-the-fire/">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card -->
+    <!-- Twitter Card (RESTORED) -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Denton Fire Recovery Guide">
     <meta name="twitter:description" content="Official recovery resources for Denton residents affected by fire.">
     <meta name="twitter:image" content="https://files.constantcontact.com/3720c3fd901/10017eb4-f7d2-424d-92ed-c1b5424b9869.png">
 
-    <!-- Fonts and Icons -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Note: html2pdf script removed from here as it is no longer needed on the main page -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -53,143 +52,122 @@
             background-color: #152a40;
             background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
         }
-        /* Animation for the modal */
         .fade-in { animation: fadeIn 0.2s ease-out; }
         @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #152a40; border-radius: 4px; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans relative">
 
     <!-- Hero Section -->
-    <div class="hero-bg text-white py-16 px-4 text-center">
+    <header class="hero-bg text-white py-16 px-4 text-center">
         <img src="https://files.constantcontact.com/3720c3fd901/10017eb4-f7d2-424d-92ed-c1b5424b9869.png" alt="Denton Fire Patch" class="h-32 mx-auto mb-6 drop-shadow-lg">
         <h1 class="text-4xl md:text-5xl font-black uppercase tracking-wide mb-2">After The Fire</h1>
-        <p class="text-yellow text-lg md:text-xl font-medium max-w-2xl mx-auto">A comprehensive recovery guide for Denton residents.</p>
-    </div>
+        <p class="text-yellow text-lg md:text-xl font-medium max-w-2xl mx-auto">Official recovery guide for City of Denton residents.</p>
+    </header>
 
     <!-- Quick Jump Menu -->
-    <div class="bg-white border-b border-gray-200 shadow-sm py-6 sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#immediate" class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2 px-4 rounded-lg transition text-sm">
-                    🚨 First 24 Hours
-                </a>
-                <a href="#financial" class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2 px-4 rounded-lg transition text-sm">
-                    💰 Finances
-                </a>
-                <a href="#documents" class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2 px-4 rounded-lg transition text-sm">
-                    📄 Documents
-                </a>
-                <a href="#utilities" class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2 px-4 rounded-lg transition text-sm">
-                    💡 Utilities
-                </a>
-                <!-- NEW: Building Safety nav button -->
-                <a href="#building" class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2 px-4 rounded-lg transition text-sm">
-                    🔨 Rebuilding
-                </a>
-                <a href="incident-pdf.html" target="_blank" class="bg-red border-2 border-red text-white hover:bg-red-700 hover:border-red-700 font-bold py-2 px-4 rounded-lg transition text-sm">
-                    📝 My Info
-                </a>
-            </div>
+    <nav class="bg-white border-b border-gray-200 shadow-sm py-4 sticky top-0 z-50 overflow-x-auto no-scrollbar">
+        <div class="max-w-5xl mx-auto px-4 flex justify-start md:justify-center items-center gap-3 whitespace-nowrap">
+            <a href="#immediate" class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2 px-3 rounded-lg transition text-xs md:text-sm">🚨 First 24h</a>
+            <a href="#utilities" class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2 px-3 rounded-lg transition text-xs md:text-sm">💡 Utilities</a>
+            <a href="#documents" class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2 px-3 rounded-lg transition text-xs md:text-sm">📄 Documents</a>
+            <a href="#financial" class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2 px-3 rounded-lg transition text-xs md:text-sm">💰 Finances</a>
+            <a href="#building" class="border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-2 px-3 rounded-lg transition text-xs md:text-sm">🔨 Rebuilding</a>
+            <a href="incident-pdf.html" target="_blank" class="bg-red text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-red-700 transition text-xs md:text-sm">📝 My Info</a>
         </div>
-    </div>
+    </nav>
 
     <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-16">
 
         <!-- Intro -->
         <section>
-            <h2 class="text-2xl font-bold text-navy border-b-4 border-yellow inline-block mb-4">Where to Begin</h2>
+            <h2 class="text-2xl font-bold text-navy border-b-4 border-yellow inline-block mb-4 uppercase">Where to Begin</h2>
             <p class="text-lg leading-relaxed text-gray-600 mb-6">
-                A fire changes your life in an instant. The Denton Fire Department has created this interactive guide to connect you directly with the local agencies that can help you rebuild. <strong class="text-navy">Please bookmark or save this link on your phone.</strong>
+                A fire changes your life in an instant. The Denton Fire Department has created this interactive guide to connect you directly with the local agencies that can help you rebuild. <strong class="text-navy">Please save this link to your phone home screen.</strong>
             </p>
 
-            <!-- Add to Home Screen Instructions (RESTORED HERE) -->
-            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-gray-700">
-                <p class="font-bold text-navy mb-2 uppercase tracking-wide text-xs flex items-center">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                    Save this Guide to Your Phone:
+            <!-- Save to Home Screen Instructions -->
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-5 text-sm text-gray-700 mb-8">
+                <p class="font-bold text-navy mb-3 uppercase tracking-wider text-xs flex items-center">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    Save to Your Phone:
                 </p>
-                <div class="grid md:grid-cols-2 gap-4">
+                <div class="grid md:grid-cols-2 gap-6">
                     <div>
-                        <strong class="text-navy">iPhone (Safari):</strong> Tap <span class="inline-block bg-white border px-1 rounded text-xs">Share</span> at the bottom, scroll down, and tap <span class="inline-block bg-white border px-1 rounded text-xs">Add to Home Screen</span>.
+                        <strong class="text-navy">iPhone (Safari):</strong> Tap <span class="bg-white border px-1 rounded font-bold">Share</span> at the bottom, then tap <span class="bg-white border px-1 rounded font-bold">Add to Home Screen</span>.
                     </div>
                     <div>
-                        <strong class="text-navy">Android (Chrome):</strong> Tap <span class="inline-block bg-white border px-1 rounded text-xs">Menu</span> (three dots) at the top right, then tap <span class="inline-block bg-white border px-1 rounded text-xs">Add to Home Screen</span>.
+                        <strong class="text-navy">Android (Chrome):</strong> Tap the <span class="bg-white border px-1 rounded font-bold">Menu (3 dots)</span> at top right, then tap <span class="bg-white border px-1 rounded font-bold">Add to Home Screen</span>.
                     </div>
                 </div>
             </div>
+
+            <!-- What to Expect When You Return -->
+            <div class="bg-white border-l-4 border-navy p-6 rounded-r-lg shadow-sm">
+                <h3 class="text-xl font-bold text-navy mb-2">What to Expect When You Return</h3>
+                <p class="text-gray-700 mb-4 text-sm leading-relaxed">Even if the fire seemed small, your home may look very different now. Firefighters often have to break windows or cut holes in the roof to release dangerous heat and smoke. We also check for hidden fire inside walls, which may require removing sheetrock.</p>
+                <p class="text-gray-700 text-sm leading-relaxed font-semibold italic">Please be careful: Soot and dirty water left behind can contain materials that may make you sick. It is best to minimize your time inside until it has been cleaned.</p>
+            </div>
         </section>
 
-        <!-- What to Expect -->
-        <section class="bg-white border-l-4 border-navy p-6 rounded-r-lg shadow-sm">
-            <h3 class="text-xl font-bold text-navy mb-2">What to Expect When You Return</h3>
-            <p class="text-gray-700 mb-4">Even if the fire seemed small, your home may look very different now. Firefighters often have to break windows or cut holes in the roof to release dangerous heat and smoke. We also check for hidden fire inside walls, which may require removing sheetrock.</p>
-            <p class="text-gray-700"><strong>Please be careful:</strong> Soot and dirty water left behind can contain materials that may make you sick. It is best to minimize your time inside until it has been cleaned.</p>
-        </section>
-
-        <!-- First 24 Hours -->
+        <!-- Safety First / First 24 Hours -->
         <section id="immediate" class="scroll-mt-32">
             <div class="bg-red-50 border-l-8 border-red shadow-md rounded-lg p-6 mb-8">
                 <h3 class="text-2xl font-bold text-red mb-2">🛑 SAFETY FIRST</h3>
-                <p class="text-gray-800 font-medium mb-4">Do not enter your damaged home unless the Fire Department explicitly says it is safe.</p>
-                <ul class="list-disc list-inside text-gray-700 mb-6 space-y-1">
+                <p class="text-gray-900 font-bold mb-4">Do not enter your damaged home unless the Fire Department explicitly says it is safe.</p>
+                <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 text-sm">
                     <li>Roofs and floors may be weakened.</li>
                     <li><strong>Do not clean up or repair</strong> anything until the fire investigation is officially completed.</li>
                     <li>You may temporarily cover broken windows or holes to prevent weather damage, but do not disturb the scene.</li>
                 </ul>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="mailto:fireprevention@cityofdenton.com" class="inline-block bg-red text-white font-bold py-3 px-6 rounded hover:bg-red-800 transition text-center">Email Fire Marshal</a>
-                    <a href="tel:9403498118" class="inline-block border-2 border-red text-red font-bold py-3 px-6 rounded hover:bg-red hover:text-white transition text-center">Call Fire Marshal: (940) 349-8118</a>
+                    <a href="tel:9403498118" class="flex-1 bg-red text-white font-bold py-3 px-6 rounded text-center hover:bg-red-800 transition shadow-lg">Call Fire Marshal: (940) 349-8118</a>
+                    <a href="mailto:fireprevention@cityofdenton.com" class="flex-1 border-2 border-red text-red font-bold py-3 px-6 rounded text-center hover:bg-red hover:text-white transition">Email Fire Marshal</a>
                 </div>
             </div>
 
-            <h3 class="text-xl font-bold text-navy mb-6 border-b pb-2">Immediate Next Steps</h3>
-            
+            <h3 class="text-xl font-bold text-navy mb-6 border-b pb-2 uppercase tracking-wide">Immediate Next Steps</h3>
             <div class="grid md:grid-cols-2 gap-6">
                 <!-- Pets -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                     <h4 class="font-bold text-navy text-lg mb-2">🐾 Care for Your Pets</h4>
                     <p class="text-sm text-gray-600 mb-2">Scared animals often react by biting or scratching. Handle them gently.</p>
-                    <p class="text-sm text-gray-600"><strong>Tip:</strong> Contact your vet to assess their overall health if they were exposed to smoke. Try to leave them with family or friends while you handle immediate logistics.</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Tip:</strong> Contact your vet to assess their overall health if they were exposed to smoke. Leave them with friends while handling logistics.</p>
+                    <a href="tel:9403494898" class="text-red font-bold text-xs hover:underline uppercase tracking-tighter">Animal Services: (940) 349-4898</a>
                 </div>
-
                 <!-- Security -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                     <h4 class="font-bold text-navy text-lg mb-2">🔒 Secure Your Property</h4>
                     <p class="text-sm text-gray-600 mb-4">If you must leave your home vacant, notify the police to prevent looting. You may need to board up windows/doors to secure the premises.</p>
                     <a href="tel:9403498181" class="text-red font-bold text-sm hover:underline">Call Denton PD (Non-Emergency) &rarr;</a>
                 </div>
-
                 <!-- Insurance -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 md:col-span-2">
                     <h4 class="font-bold text-navy text-lg mb-2">📞 Contact Your Insurance</h4>
-                    <p class="text-sm text-gray-600 mb-3">Notify them of the fire immediately. Ask specifically about <strong>"Loss of Use"</strong> coverage—this can often provide immediate funds for hotels, food, and clothes.</p>
-                    <p class="text-sm text-gray-600"><strong>Note:</strong> Ask for a cost estimate in writing from any restoration company before they begin work.</p>
+                    <p class="text-sm text-gray-600 mb-3">Notify them immediately. Ask about <strong>"Loss of Use"</strong> coverage—this provides funds for hotels, food, and clothes.</p>
+                    <p class="text-xs text-gray-500 italic">Note: Ask for a cost estimate in writing from any restoration company before they begin work.</p>
                 </div>
             </div>
         </section>
 
         <!-- Housing & Utilities -->
         <section id="utilities" class="scroll-mt-32">
-            <h2 class="text-2xl font-bold text-navy border-b-4 border-yellow inline-block mb-6">Housing & Utilities</h2>
+            <h2 class="text-2xl font-bold text-navy border-b-4 border-yellow inline-block mb-6 uppercase">Housing & Utilities</h2>
             <div class="grid md:grid-cols-2 gap-6">
-                
                 <!-- Emergency Shelter -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                     <h4 class="font-bold text-red text-lg mb-2">Need a place to stay?</h4>
-                    <p class="text-sm text-gray-600 mb-4">If you are displaced, these organizations offer emergency shelter and aid.</p>
-                    
-                    <div class="bg-gray-50 p-3 rounded mb-4 text-sm text-gray-700">
-                        <strong>Text 4FEMA (43362):</strong><br>
-                        Text <span class="font-mono bg-white px-1 border rounded">SHELTER</span> and your <span class="font-mono bg-white px-1 border rounded">ZIP CODE</span> to find open shelters near you.
-                    </div>
-
+                    <p class="text-sm text-gray-600 mb-4">Text <span class="font-mono bg-gray-100 px-1 border rounded">SHELTER</span> and your <span class="font-mono bg-gray-100 px-1 border rounded">ZIP CODE</span> to <span class="font-bold">43362</span> to find open shelters.</p>
                     <div class="space-y-3">
-                        <a href="https://www.redcross.org/get-help/resources.html" target="_blank" class="flex justify-between items-center w-full border border-gray-200 text-gray-700 font-bold px-4 py-2 rounded hover:bg-navy hover:text-white transition">
+                        <a href="tel:8558917325" class="flex justify-between items-center w-full border border-gray-200 text-gray-700 font-bold px-4 py-2 rounded hover:bg-navy hover:text-white transition">
                             <span>American Red Cross</span>
                             <span class="text-xs font-normal opacity-75">(855) 891-7325</span>
                         </a>
-                        <a href="https://www.salvationarmyusa.org/usa-southern-territory/texas/" target="_blank" class="flex justify-between items-center w-full border border-gray-200 text-gray-700 font-bold px-4 py-2 rounded hover:bg-navy hover:text-white transition">
+                        <a href="tel:9405663800" class="flex justify-between items-center w-full border border-gray-200 text-gray-700 font-bold px-4 py-2 rounded hover:bg-navy hover:text-white transition">
                             <span>Salvation Army</span>
                             <span class="text-xs font-normal opacity-75">(940) 566-3800</span>
                         </a>
@@ -203,250 +181,210 @@
                 <!-- Utilities -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                     <h4 class="font-bold text-navy text-lg mb-2">Utility Services</h4>
-                    <p class="text-sm text-gray-600 mb-4">Firefighters may have disconnected utilities for safety. <strong>Do not try to turn them back on yourself.</strong> A licensed professional must inspect the property first.</p>
-                    
+                    <p class="text-sm text-gray-600 mb-4">Firefighters may have disconnected utilities for safety. <strong>Do not turn them back on yourself.</strong></p>
                     <div class="space-y-3">
                         <a href="https://www.cityofdenton.com/313/Utilities" target="_blank" class="block w-full bg-navy text-white font-bold text-center py-3 rounded hover:bg-opacity-90 transition">Manage Utilities Online</a>
-                        <div class="text-center text-sm text-gray-500 my-2">- OR -</div>
                         <a href="tel:9403498360" class="block w-full border-2 border-navy text-navy font-bold text-center py-2 rounded hover:bg-navy hover:text-white transition">
                             Call Building Services
-                            <span class="block text-xs font-normal">(For inspections/reconnection)</span>
+                            <span class="block text-[10px] font-normal uppercase tracking-widest">(940) 349-8360</span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Replacing Documents -->
+        <!-- Vital Documents -->
         <section id="documents" class="scroll-mt-32">
-            <h2 class="text-2xl font-bold text-navy border-b-4 border-yellow inline-block mb-6">Replacing Vital Documents</h2>
-            <p class="text-gray-600 mb-6">You will likely need to replace lost identification to move forward with insurance and housing. Use this guide to get started.</p>
+            <h2 class="text-2xl font-bold text-navy border-b-4 border-yellow inline-block mb-6 uppercase">Vital Documents</h2>
+            <p class="text-gray-600 mb-6 text-sm">You will likely need to replace lost identification to move forward. Use this guide to get started.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-gray-100 p-5 rounded-lg border-l-4 border-navy">
-                    <h4 class="font-bold text-navy">🚗 Driver's License</h4>
-                    <p class="text-xs text-gray-500 mt-1"><strong>Authority:</strong> Texas DPS (4020 E. McKinney St)</p>
-                    <p class="text-xs text-gray-500"><strong>Need:</strong> Appointment + Birth Cert + SSN</p>
-                    <a href="https://www.dps.texas.gov/section/driver-license/replace-your-driver-license-or-id-card" target="_blank" class="block mt-2 text-red font-bold text-sm hover:underline">dps.texas.gov &rarr;</a>
+                <div class="bg-gray-100 p-4 rounded-lg border-l-4 border-navy">
+                    <h4 class="font-bold text-navy text-sm">🚗 Driver's License</h4>
+                    <p class="text-[10px] text-gray-500 uppercase mt-1">TX DPS · 4020 E. McKinney St</p>
+                    <p class="text-[10px] text-gray-500 mt-0.5"><strong>Need:</strong> Appointment + Birth Cert + SSN</p>
+                    <a href="https://www.dps.texas.gov/section/driver-license/replace-your-driver-license-or-id-card" target="_blank" class="text-red font-black text-[10px] hover:underline mt-1 block">REPLACE &rarr;</a>
                 </div>
 
-                <div class="bg-gray-100 p-5 rounded-lg border-l-4 border-navy">
-                    <h4 class="font-bold text-navy">👶 Birth Certificate</h4>
-                    <p class="text-xs text-gray-500 mt-1"><strong>Authority:</strong> Denton County Clerk</p>
-                    <p class="text-xs text-gray-500"><strong>Need:</strong> Valid ID or Secondary Proofs</p>
-                    <a href="https://dentontxvitals.permitium.com/rod" target="_blank" class="block mt-2 text-red font-bold text-sm hover:underline">dentoncounty.gov &rarr;</a>
+                <div class="bg-gray-100 p-4 rounded-lg border-l-4 border-navy">
+                    <h4 class="font-bold text-navy text-sm">👶 Birth Certificate</h4>
+                    <p class="text-[10px] text-gray-500 uppercase mt-1">Denton County Clerk</p>
+                    <p class="text-[10px] text-gray-500 mt-0.5"><strong>Need:</strong> Valid ID or Secondary Proofs</p>
+                    <a href="https://dentontxvitals.permitium.com/rod" target="_blank" class="text-red font-black text-[10px] hover:underline mt-1 block">REPLACE &rarr;</a>
                 </div>
 
-                <div class="bg-gray-100 p-5 rounded-lg border-l-4 border-navy">
-                    <h4 class="font-bold text-navy">🕊️ Death Certificate</h4>
-                    <p class="text-xs text-gray-500 mt-1"><strong>Authority:</strong> Denton County Clerk</p>
-                    <p class="text-xs text-gray-500"><strong>Need:</strong> Relationship Proof</p>
-                    <a href="https://dentontxvitals.permitium.com/rod" target="_blank" class="block mt-2 text-red font-bold text-sm hover:underline">dentoncounty.gov &rarr;</a>
+                <!-- RESTORED: Death Certificate as its own card -->
+                <div class="bg-gray-100 p-4 rounded-lg border-l-4 border-navy">
+                    <h4 class="font-bold text-navy text-sm">🕊️ Death Certificate</h4>
+                    <p class="text-[10px] text-gray-500 uppercase mt-1">Denton County Clerk</p>
+                    <p class="text-[10px] text-gray-500 mt-0.5"><strong>Need:</strong> Relationship Proof</p>
+                    <a href="https://dentontxvitals.permitium.com/rod" target="_blank" class="text-red font-black text-[10px] hover:underline mt-1 block">REPLACE &rarr;</a>
                 </div>
 
-                <div class="bg-gray-100 p-5 rounded-lg border-l-4 border-navy">
-                    <h4 class="font-bold text-navy">💍 Marriage License</h4>
-                    <p class="text-xs text-gray-500 mt-1"><strong>Authority:</strong> Denton County Clerk</p>
-                    <p class="text-xs text-gray-500"><strong>Need:</strong> Date of Marriage</p>
-                    <a href="https://dentontxvitals.permitium.com/rod" target="_blank" class="block mt-2 text-red font-bold text-sm hover:underline">dentoncounty.gov &rarr;</a>
+                <div class="bg-gray-100 p-4 rounded-lg border-l-4 border-navy">
+                    <h4 class="font-bold text-navy text-sm">💍 Marriage License</h4>
+                    <p class="text-[10px] text-gray-500 uppercase mt-1">Denton County Clerk</p>
+                    <p class="text-[10px] text-gray-500 mt-0.5"><strong>Need:</strong> Date of Marriage</p>
+                    <a href="https://dentontxvitals.permitium.com/rod" target="_blank" class="text-red font-black text-[10px] hover:underline mt-1 block">REPLACE &rarr;</a>
                 </div>
 
-                <div class="bg-gray-100 p-5 rounded-lg border-l-4 border-navy">
-                    <h4 class="font-bold text-navy">⚖️ Divorce Decree</h4>
-                    <p class="text-xs text-gray-500 mt-1"><strong>Authority:</strong> District Clerk</p>
-                    <p class="text-xs text-gray-500"><strong>Need:</strong> Case Number</p>
-                    <a href="https://www.dentoncounty.gov/DocumentCenter/View/486/Records-Request-Form-PDF" target="_blank" class="block mt-2 text-red font-bold text-sm hover:underline">Records Request (PDF) &rarr;</a>
+                <div class="bg-gray-100 p-4 rounded-lg border-l-4 border-navy">
+                    <h4 class="font-bold text-navy text-sm">⚖️ Divorce Decree</h4>
+                    <p class="text-[10px] text-gray-500 uppercase mt-1">District Clerk</p>
+                    <p class="text-[10px] text-gray-500 mt-0.5"><strong>Need:</strong> Case Number</p>
+                    <a href="https://www.dentoncounty.gov/DocumentCenter/View/486/Records-Request-Form-PDF" target="_blank" class="text-red font-black text-[10px] hover:underline mt-1 block">REPLACE &rarr;</a>
                 </div>
 
-                <div class="bg-gray-100 p-5 rounded-lg border-l-4 border-navy">
-                    <h4 class="font-bold text-navy">🆔 Social Security Card</h4>
-                    <p class="text-xs text-gray-500 mt-1"><strong>Authority:</strong> SSA (2201 Colorado Blvd)</p>
-                    <p class="text-xs text-gray-500"><strong>Need:</strong> Driver's License / ID</p>
-                    <a href="https://www.ssa.gov" target="_blank" class="block mt-2 text-red font-bold text-sm hover:underline">ssa.gov (Form SS-5) &rarr;</a>
+                <div class="bg-gray-100 p-4 rounded-lg border-l-4 border-navy">
+                    <h4 class="font-bold text-navy text-sm">🆔 Social Security Card</h4>
+                    <p class="text-[10px] text-gray-500 uppercase mt-1">SSA · 2201 Colorado Blvd</p>
+                    <p class="text-[10px] text-gray-500 mt-0.5"><strong>Need:</strong> Driver's License / ID</p>
+                    <a href="https://www.ssa.gov" target="_blank" class="text-red font-black text-[10px] hover:underline mt-1 block">REPLACE (Form SS-5) &rarr;</a>
                 </div>
+
             </div>
         </section>
 
-        <!-- Finances -->
+        <!-- Financial Recovery -->
         <section id="financial" class="scroll-mt-32">
-            <h2 class="text-2xl font-bold text-navy border-b-4 border-yellow inline-block mb-6">Financial Recovery</h2>
+            <h2 class="text-2xl font-bold text-navy border-b-4 border-yellow inline-block mb-6 uppercase">Financial Recovery</h2>
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                     <h4 class="font-bold text-navy text-lg mb-2">Replacing Burnt Money</h4>
-                    <p class="text-sm text-gray-600 mb-3">If half or more of a bill is still intact, you can take it to your regional Federal Reserve Bank to replace it.</p>
-                    <p class="text-sm text-gray-600"><strong>Seriously Damaged:</strong> Mail mutilated currency to the Bureau of Engraving and Printing. <a href="http://www.moneyfactory.gov/submitaclaim" class="text-red underline">Instructions here</a>.</p>
+                    <p class="text-sm text-gray-600 mb-3">If half or more of a bill is intact, take it to your regional Federal Reserve Bank.</p>
+                    <p class="text-xs text-gray-500 italic">Seriously Damaged: Mail mutilated currency to the Bureau of Engraving and Printing. <a href="http://www.moneyfactory.gov/submitaclaim" class="text-red underline font-bold">Instructions here</a>.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                     <h4 class="font-bold text-navy text-lg mb-2">U.S. Savings Bonds</h4>
-                    <p class="text-sm text-gray-600">To replace destroyed bonds, download <strong>FS Form 1048</strong> from <a href="http://www.treasurydirect.gov" class="text-red underline">TreasuryDirect.gov</a>.</p>
+                    <p class="text-sm text-gray-600 mb-4">To replace destroyed bonds, download <strong class="text-navy">FS Form 1048</strong>.</p>
+                    <a href="http://www.treasurydirect.gov" target="_blank" class="text-red font-bold text-sm hover:underline">TreasuryDirect.gov &rarr;</a>
                 </div>
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!-- NEW: Building Safety & Reconstruction        -->
-        <!-- ============================================ -->
+        <!-- Rebuilding & Permits -->
         <section id="building" class="scroll-mt-32">
-            <h2 class="text-2xl font-bold text-navy border-b-4 border-yellow inline-block mb-6">Rebuilding & Permits</h2>
+            <h2 class="text-2xl font-bold text-navy border-b-4 border-yellow inline-block mb-6 uppercase">Rebuilding & Permits</h2>
 
-            <div class="bg-white border-l-4 border-navy p-6 rounded-r-lg shadow-sm mb-6">
-                <p class="text-gray-700 mb-2">The City of Denton requires a building permit to repair fire or other types of damage. We are happy to help with the list of repairs needed along with any code updates to your home. Code updates, if required, will be minimal and will make your home safer — some of these updates may include installing smoke detectors, carbon monoxide detectors, and updated electrical wiring.</p>
-                <p class="text-gray-700 font-semibold">Please know that we are here to help.</p>
-                <a href="https://www.cityofdenton.com/1158/Disaster-Fire-Damage" target="_blank" class="inline-block mt-3 text-red font-bold text-sm hover:underline">Disaster / Fire Damage — City of Denton &rarr;</a>
+            <div class="bg-white border-l-4 border-navy p-6 rounded-r-lg shadow-sm mb-8">
+                <p class="text-gray-700 mb-4 text-sm leading-relaxed">The City of Denton requires a building permit to repair fire damage. We are here to help with the list of repairs and any required code updates. Updates like smoke detectors, carbon monoxide detectors, and wiring improvements will make your home safer. <strong>Please know that we are here to help.</strong></p>
+                <!-- RESTORED: Disaster / Fire Damage link -->
+                <a href="https://www.cityofdenton.com/1158/Disaster-Fire-Damage" target="_blank" class="inline-block mb-5 text-red font-bold text-sm hover:underline">Disaster / Fire Damage — cityofdenton.com &rarr;</a>
+                <div class="flex items-center gap-3">
+                    <span class="bg-yellow/20 text-navy font-bold py-1 px-3 rounded text-xs uppercase tracking-widest">Action 1</span>
+                    <a href="tel:9403498600" class="text-red font-bold hover:underline text-sm uppercase">Call Building Safety: (940) 349-8600</a>
+                </div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-6 mb-6">
-
-                <!-- First Steps -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 md:col-span-2">
-                    <h4 class="font-bold text-navy text-lg mb-4 border-b pb-2">First Steps</h4>
-                    <ol class="space-y-4 text-sm text-gray-700 list-decimal list-inside">
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <h4 class="font-black text-navy mb-4 border-b pb-2 uppercase text-sm">The Process</h4>
+                    <ol class="space-y-4 text-[13px] text-gray-700 list-decimal list-inside">
+                        <li><strong>Request a courtesy fire inspection</strong> from Building Safety — (940) 349-8600.</li>
                         <li>
-                            <strong>Call Building Safety</strong> to request a courtesy fire/disaster inspection. A staff member will help you schedule it.
-                            <br>
-                            <a href="tel:9403498600" class="inline-block mt-2 border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold py-1 px-4 rounded-lg transition text-sm">📞 (940) 349-8600</a>
-                        </li>
-                        <li>
-                            <strong>Full loss?</strong> You will need a permit to demolish the damaged structure and then a separate permit to rebuild when you are ready.
-                            <div class="flex flex-wrap gap-2 mt-2">
-                                <a href="https://www.cityofdenton.com/635/Demolition" target="_blank" class="text-red font-bold text-sm hover:underline">Demolition Permit &rarr;</a>
-                                <span class="text-gray-400">|</span>
-                                <a href="https://www.cityofdenton.com/676/New-Residential-Construction" target="_blank" class="text-red font-bold text-sm hover:underline">New Construction Permit &rarr;</a>
+                            <strong>Full loss?</strong> You need a permit to demolish and a separate one to rebuild when ready.
+                            <!-- RESTORED: both demolition and new construction permit links -->
+                            <div class="flex flex-wrap gap-3 mt-2 ml-4">
+                                <a href="https://www.cityofdenton.com/635/Demolition" target="_blank" class="text-red font-bold text-[11px] uppercase hover:underline">Demolition Permit &rarr;</a>
+                                <a href="https://www.cityofdenton.com/676/New-Residential-Construction" target="_blank" class="text-red font-bold text-[11px] uppercase hover:underline">New Construction Permit &rarr;</a>
                             </div>
                         </li>
+                        <li><strong>Review your repair list</strong> provided by the City with your contractor and insurance adjuster.</li>
                         <li>
-                            After the courtesy inspection, a <strong>list of necessary repairs</strong> will be provided to you. Share this list with your contractor and insurance adjuster.
+                            <strong>Submit a building permit application</strong> with repair details and floor plans. You or your contractor can meet with a plans examiner for guidance.
+                            <!-- RESTORED: Residential Additions or Alterations link -->
+                            <div class="mt-2 ml-4">
+                                <a href="https://www.cityofdenton.com/674/Residential-Additions-or-Alterations" target="_blank" class="text-red font-bold text-[11px] uppercase hover:underline">Residential Additions or Alterations &rarr;</a>
+                            </div>
                         </li>
-                        <li>
-                            Your selected contractor will submit a <strong>building permit application</strong> with a floor plan and repair details. You or your contractor can meet with a plans examiner if you need guidance on what to submit.
-                            <br>
-                            <a href="https://www.cityofdenton.com/674/Residential-Additions-or-Alterations" target="_blank" class="inline-block mt-1 text-red font-bold text-sm hover:underline">Residential Additions or Alterations &rarr;</a>
-                        </li>
-                        <li>
-                            <strong>All contractors must be registered with the City</strong> to ensure correct licenses are held.
-                            <br>
-                            <a href="https://www.cityofdenton.com/668/Contractor-Registration" target="_blank" class="inline-block mt-1 text-red font-bold text-sm hover:underline">Contractor Registration &rarr;</a>
+                        <li><strong>Verify Registration:</strong> All contractors must be registered with the City.
+                            <div class="mt-2 ml-4">
+                                <a href="https://www.cityofdenton.com/668/Contractor-Registration" target="_blank" class="text-red font-bold text-[11px] uppercase hover:underline">Contractor Registration &rarr;</a>
+                            </div>
                         </li>
                     </ol>
                 </div>
 
-                <!-- During Construction -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <h4 class="font-bold text-navy text-lg mb-3">During Construction</h4>
-                    <ul class="space-y-2 text-sm text-gray-700 list-disc list-inside">
-                        <li>Ensure all required inspections are completed at each stage.</li>
-                        <li>Submit all required inspection reports to your insurance adjuster.</li>
-                    </ul>
-                    <a href="https://www.cityofdenton.com/DocumentCenter/View/5365/Inspections-List-PDF" target="_blank" class="inline-block mt-3 text-red font-bold text-sm hover:underline">View Inspections List (PDF) &rarr;</a>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                        <h4 class="font-black text-navy mb-3 uppercase text-sm">During & After</h4>
+                        <ul class="space-y-3 text-[13px] text-gray-700 list-disc list-inside">
+                            <li>Ensure all required inspections are completed at each stage.</li>
+                            <li>Submit all required inspection reports to your insurance adjuster.</li>
+                            <li>Once complete, the City inspector issues a final inspection report — send a copy to your insurance adjuster to close the claim.</li>
+                        </ul>
+                        <a href="https://www.cityofdenton.com/DocumentCenter/View/5365/Inspections-List-PDF" target="_blank" class="block mt-4 text-red font-bold text-[11px] uppercase hover:underline">Inspections Checklist (PDF) &rarr;</a>
+                    </div>
+                    <div class="bg-yellow/10 border border-yellow/40 p-4 rounded-lg">
+                        <h5 class="font-bold text-navy text-xs uppercase mb-1">⚠️ Avoid Fraud</h5>
+                        <p class="text-[11px] text-gray-700">Never pay for a full job upfront. Final payment should only occur after the City inspector issues the final report.</p>
+                    </div>
                 </div>
-
-                <!-- Completion -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <h4 class="font-bold text-navy text-lg mb-3">Completion</h4>
-                    <p class="text-sm text-gray-700">Once all work is done, the City inspector will issue a <strong>final inspection report</strong>. A copy must be sent to your insurance adjuster to close out your claim.</p>
-                </div>
-
             </div>
 
-            <!-- PDF Download -->
-            <div class="bg-navy rounded-xl p-6 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div class="text-white">
-                    <h4 class="font-bold text-lg text-yellow mb-1">Complete Recovery Guide — PDF</h4>
-                    <p class="text-sm text-gray-300">Download or print the full guide to keep a copy for your records or share with family.</p>
+            <!-- PDF Download Card -->
+            <div class="bg-navy rounded-xl p-6 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-white text-center sm:text-left">
+                    <h4 class="font-bold text-lg text-yellow mb-1">Complete Recovery Guide (PDF)</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Printable reference copy</p>
                 </div>
-                <a href="after-the-fire-guide.pdf" download class="flex-shrink-0 inline-flex items-center gap-2 bg-yellow text-navy font-bold py-3 px-6 rounded-lg hover:opacity-90 transition text-sm whitespace-nowrap">
-                    ⬇ Download Full PDF
+                <a href="after-the-fire-guide.pdf" download class="w-full sm:w-auto flex items-center justify-center gap-2 bg-yellow text-navy font-bold py-3 px-8 rounded-lg hover:bg-white transition shadow-lg text-sm">
+                    ⬇ DOWNLOAD FULL PDF
                 </a>
-            </div>
-
-        </section>
-        <!-- ============================================ -->
-        <!-- END: Building Safety & Reconstruction        -->
-        <!-- ============================================ -->
-
-        <!-- Incident Form Link Section -->
-        <section id="incident-form-card" class="scroll-mt-32">
-            <div class="bg-navy rounded-xl p-8 shadow-lg text-center text-white">
-                <h4 class="text-2xl font-black uppercase mb-4 text-yellow">Need to Document Your Incident?</h4>
-                <p class="text-lg mb-6 max-w-2xl mx-auto opacity-90">
-                    We've created a dedicated tool to help you record your incident number, investigator name, and insurance details. You can fill it out and instantly download a PDF for your records.
-                </p>
-                
-                <a href="incident-pdf.html" target="_blank" class="inline-block bg-red hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg shadow-md transition transform hover:scale-105">
-                    📄 Create My Incident Report PDF
-                </a>
-                <p class="text-sm text-gray-400 mt-4">Opens in a new window for easy printing. Your data stays private on your device.</p>
             </div>
         </section>
 
-        <!-- MOVED TO BOTTOM: Official Fire Report -->
-        <div class="bg-yellow/10 border-l-4 border-yellow p-6 mt-8 rounded-r-lg shadow-sm">
-            <h4 class="font-bold text-navy text-lg">📄 Official Fire Incident Report</h4>
-            <p class="text-sm text-gray-700 mt-2 mb-3">Your insurance company will likely request this official report. Once you have your incident number from above, you can complete this request.</p>
-            <a href="https://dentontx.mycusthelp.com/WEBAPP/_rs/(S(dzqdfcbs442oh5cdthdzos2b))/SupportHome.aspx?lp=2&sSessionID=" target="_blank" class="inline-block bg-navy text-white font-bold py-2 px-4 rounded hover:bg-opacity-90 text-sm transition">
-                Submit Open Records Request &rarr;
-            </a>
-        </div>
+        <!-- Incident Documentation -->
+        <section id="incident-documentation" class="scroll-mt-32">
+            <div class="bg-gray-900 rounded-2xl p-8 text-center text-white shadow-2xl">
+                <h3 class="text-2xl font-black mb-4 text-yellow uppercase">Incident Documentation</h3>
+                <p class="mb-6 opacity-80 max-w-xl mx-auto text-sm">Use our tool to log your incident number and insurance info for a printable PDF, then request your official fire report below.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <a href="incident-pdf.html" class="bg-red hover:bg-red-800 text-white font-bold py-4 px-8 rounded-xl transition transform hover:-translate-y-1 shadow-xl">Create My PDF Info Card</a>
+                    <a href="https://dentontx.mycusthelp.com" target="_blank" class="bg-white hover:bg-gray-200 text-navy font-bold py-4 px-8 rounded-xl transition transform hover:-translate-y-1 shadow-xl">Official Records Request</a>
+                </div>
+                <p class="text-xs text-gray-500 max-w-md mx-auto italic border-t border-gray-800 pt-4">Your insurance company will require the official Fire Incident Report to process your total loss claim.</p>
+            </div>
+        </section>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-navy text-white py-12 text-center pb-24">
+    <footer class="bg-navy text-white pt-16 pb-24 text-center">
         <div class="max-w-4xl mx-auto px-4">
-            <h3 class="text-xl font-bold mb-4">Denton Fire Department</h3>
-            <p class="text-gray-300 mb-1">332 E. Hickory St, Denton, TX 76201</p>
-            <p class="text-gray-300 mb-6">Non-Emergency: <a href="tel:9403498840" class="hover:text-white underline">(940) 349-8840</a></p>
-            
-            <a href="http://www.dentonfire.com" class="text-yellow hover:text-white font-bold underline mb-8 block">www.dentonfire.com</a>
-
-            <div class="flex justify-center space-x-6 mt-6">
-                <a href="https://www.facebook.com/dentonfire" class="opacity-80 hover:opacity-100 transition">
-                    <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" width="30" height="30" alt="Facebook">
-                </a>
-                <a href="https://x.com/DentonFireDept" class="opacity-80 hover:opacity-100 transition">
-                    <img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx.png" width="30" height="30" alt="X">
-                </a>
-                <a href="https://www.instagram.com/dentonfiredepartment" class="opacity-80 hover:opacity-100 transition">
-                    <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" width="30" height="30" alt="Instagram">
-                </a>
+            <h3 class="text-xl font-black mb-4 uppercase tracking-widest">Denton Fire Department</h3>
+            <p class="text-gray-400 text-sm mb-2">332 E. Hickory St, Denton, TX 76201</p>
+            <p class="text-gray-400 text-sm mb-6">Non-Emergency: <a href="tel:9403498840" class="hover:text-white underline">(940) 349-8840</a></p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://facebook.com/dentonfire" class="hover:scale-110 transition"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" width="24" alt="Facebook"></a>
+                <a href="https://x.com/DentonFireDept" class="hover:scale-110 transition"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx.png" width="24" alt="X"></a>
+                <a href="https://instagram.com/dentonfiredepartment" class="hover:scale-110 transition"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" width="24" alt="Instagram"></a>
             </div>
+            <a href="http://www.dentonfire.com" target="_blank" class="text-yellow font-bold uppercase text-xs tracking-widest hover:text-white underline">www.dentonfire.com</a>
         </div>
     </footer>
 
-    <!-- Floating QR Button -->
-    <div class="fixed bottom-6 right-6 z-50">
-        <button onclick="toggleQrModal()" 
-                class="bg-navy/90 hover:bg-navy text-white rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shadow-2xl border-2 border-white/20 transition-all hover:scale-110 backdrop-blur-sm group">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 md:w-8 md:h-8 group-hover:stroke-yellow transition-colors">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75ZM6.75 16.5h.75v.75h-.75v-.75ZM16.5 6.75h.75v.75h-.75v-.75ZM13.5 13.5h.75v.75h-.75v-.75ZM13.5 19.5h.75v.75h-.75v-.75ZM19.5 13.5h.75v.75h-.75v-.75ZM19.5 19.5h.75v.75h-.75v-.75ZM16.5 16.5h.75v.75h-.75v-.75Z" />
-            </svg>
+    <!-- Back to Top & QR -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="bg-white text-navy p-3 rounded-full shadow-lg border border-gray-200 hover:bg-gray-100 transition" aria-label="Back to top">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+        </button>
+        <button onclick="toggleQrModal()" class="bg-navy text-white p-3 rounded-full shadow-2xl hover:bg-red transition transform hover:scale-110" aria-label="Show QR code">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>
         </button>
     </div>
 
     <!-- QR Modal -->
-    <div id="qrModal" class="fixed inset-0 z-[60] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 bg-navy/80 backdrop-blur-sm transition-opacity" onclick="toggleQrModal()"></div>
-        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
-                <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm fade-in">
-                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 text-center">
-                        <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-navy/10 sm:mx-auto mb-4">
-                            <svg class="h-6 w-6 text-navy" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75ZM6.75 16.5h.75v.75h-.75v-.75ZM16.5 6.75h.75v.75h-.75v-.75ZM13.5 13.5h.75v.75h-.75v-.75ZM13.5 19.5h.75v.75h-.75v-.75ZM19.5 13.5h.75v.75h-.75v-.75ZM19.5 19.5h.75v.75h-.75v-.75ZM16.5 16.5h.75v.75h-.75v-.75Z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-base font-semibold leading-6 text-gray-900 mb-2">Scan for Mobile Access</h3>
-                        <p class="text-sm text-gray-500 mb-4">Scan this code to open this resource on your mobile device.</p>
-                        <div class="flex justify-center p-2 border border-gray-100 rounded bg-gray-50">
-                            <img id="qrImage" src="" alt="QR Code" class="w-48 h-48 mix-blend-multiply">
-                        </div>
-                    </div>
-                    <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                        <button type="button" onclick="toggleQrModal()" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Close</button>
-                    </div>
+    <div id="qrModal" class="fixed inset-0 z-[60] hidden" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-navy/90 backdrop-blur-md" onclick="toggleQrModal()"></div>
+        <div class="fixed inset-0 flex items-center justify-center p-4">
+            <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center fade-in">
+                <h3 class="font-bold text-navy text-xl mb-2">Access on Mobile</h3>
+                <p class="text-sm text-gray-500 mb-6">Scan to keep this recovery guide on your phone for reference.</p>
+                <div class="flex justify-center mb-6 p-4 bg-gray-50 rounded-xl">
+                    <img id="qrImage" src="" alt="QR Code" class="w-48 h-48">
                 </div>
+                <button onclick="toggleQrModal()" class="w-full bg-navy text-white py-3 rounded-xl font-bold">Close</button>
             </div>
         </div>
     </div>
@@ -457,11 +395,10 @@
             const qrImage = document.getElementById('qrImage');
             modal.classList.toggle('hidden');
             if (!modal.classList.contains('hidden')) {
-                const currentUrl = 'https://dentonfire.github.io/After-the-Fire/';
+                const currentUrl = 'https://dentonfiredept.github.io/after-the-fire/';
                 qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(currentUrl)}`;
             }
         }
     </script>
-
 </body>
 </html>
